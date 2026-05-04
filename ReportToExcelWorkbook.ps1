@@ -44,7 +44,7 @@ $cleaned = $text -replace "=+\r?\n", ""
 $pattern = "SHEET:\s*(.+?)\r?\n(.*?)(?=\r?\nSHEET:|$)"
 $matches = [regex]::Matches($cleaned, $pattern, "Singleline")
 
-$sheets = [ordered]@{}
+$sheets = [ordered] @{}
 
 foreach ($m in $matches) {
     $sheetName = $m.Groups[1].Value.Trim()
@@ -56,8 +56,12 @@ foreach ($m in $matches) {
     foreach ($line in $block.Split("`n")) {
         if ($line -notmatch "\|") { continue }
 
-        # Split on pipe, trim whitespace, remove empties
+        # Split on pipe, trim whitespace
         $parts = $line.Split("|") | ForEach-Object { $_.Trim() } | Where-Object { $_ -ne "" }
+
+        # Split on pipe, trim whitespace, remove empties
+        # $parts = $line.Split("|") | ForEach-Object { $_.Trim() } | Where-Object { $_ -ne "" }
+
 
         if ($parts.Count -gt 0) {
             $rows += ,$parts

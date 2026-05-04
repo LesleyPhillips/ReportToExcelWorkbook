@@ -66,7 +66,7 @@ def parse_text_file(text: str):
                 continue
 
             parts = [col.strip() for col in line.split("|")]
-            parts = [p for p in parts if p]  # remove empty columns
+            # parts = [p for p in parts if p]  # remove empty columns
 
             if parts:
                 rows.append(parts)
