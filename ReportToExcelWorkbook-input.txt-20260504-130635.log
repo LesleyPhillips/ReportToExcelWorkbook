@@ -1,0 +1,11 @@
+2026-05-04 13:06:35 [INFO] Starting ReportToExcelWorkbook...
+2026-05-04 13:06:35 [INFO] Log file created: D:\data\ReportToExcelWorkbook-input.txt-20260504-130635.log
+2026-05-04 13:06:35 [INFO] Parsing sheet: SheetTitle1
+2026-05-04 13:06:35 [INFO] Parsing sheet: SheetTitle2
+2026-05-04 13:06:35 [INFO] Parsing sheet: SheetTitle3
+2026-05-04 13:06:35 [INFO] Parsed 3 sheets successfully.
+2026-05-04 13:06:35 [INFO] Creating sheet: SheetTitle1 with 3 rows
+2026-05-04 13:06:35 [INFO] Creating sheet: SheetTitle2 with 4 rows
+2026-05-04 13:06:35 [INFO] Creating sheet: SheetTitle3 with 8 rows
+2026-05-04 13:06:35 [INFO] Workbook saved: D:\data\ReportToExcelWorkbook-input.txt-20260504-130635.xlsx
+2026-05-04 13:06:35 [INFO] ReportToExcelWorkbook completed successfully.
